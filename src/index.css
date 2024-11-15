@@ -1,0 +1,12 @@
+/* Alice */
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Dynalight&display=swap");
+
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* numans */
+@import url("https://fonts.googleapis.com/css2?family=Numans&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
