@@ -14,15 +14,15 @@ function Navbar() {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 flex justify-between items-center px-6 py-2">
-        <img src="/logo.png" alt="" className="h-10" />
-        <button className="text-xl text-white" onClick={handleToggle}>
+        <img src="/logo.png" alt="" className="h-9" />
+        <button className="text-2xl text-white" onClick={handleToggle}>
           <FontAwesomeIcon icon={faBars} />
         </button>
 
         {isOpen && (
           <div className="absolute right-0 top-0 w-[90%] bg-[#4A4947] text-white font-numans px-6 pt-3 h-screen flex flex-col">
             <div className="w-full flex justify-end">
-              <button className="w-max text-2xl " onClick={handleToggle}>
+              <button className="w-max text-3xl " onClick={handleToggle}>
                 <FontAwesomeIcon icon={faXmark} />
               </button>
             </div>

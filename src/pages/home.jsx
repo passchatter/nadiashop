@@ -2,6 +2,7 @@ import "../App.css";
 import Navbar from "../components/navbar.jsx";
 import Hero from "../components/hero.jsx";
 import Products from "../components/products.jsx";
+import BestProducts from "../components/bestProducts.jsx";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Navbar></Navbar>
       <Hero></Hero>
       <Products></Products>
+      <BestProducts></BestProducts>
     </>
   );
 }
