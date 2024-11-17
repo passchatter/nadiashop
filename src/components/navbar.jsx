@@ -26,13 +26,15 @@ function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-11 lg:px-14 xl:px-24 py-2 lg:py-5 transition-all duration-300 ${isScrolled ? "bg-white text-black shadow-md" : "bg-transparent text-white"}`}>
-        <img src={`${isScrolled ? "/logoBlack.png" : "logoWhite.png"}`} alt="" className="h-9 md:h-10 lg:h-12" />
+      <nav
+        className={`z-50 fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-11 lg:px-14 xl:px-28 py-2 lg:py-3 transition-all duration-300 ${isScrolled ? "bg-white text-black shadow-md" : "bg-transparent text-white"}`}
+      >
+        <img src={`${isScrolled ? "/logoBlack.png" : "logoWhite.png"}`} alt="" className="h-9 md:h-10" />
         <button className="text-2xl md:hidden" onClick={handleToggle}>
           <FontAwesomeIcon icon={faBars} />
         </button>
 
-        <div className="hidden md:flex gap-6 font-numans md:text-md lg:text-lg">
+        <div className="hidden md:flex gap-6 font-raleway md:text-md">
           <div className="relative group">
             <a href="#">Home</a>
             <span className={`absolute bottom-0 left-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${isScrolled ? "bg-black" : "bg-white"}`}></span>

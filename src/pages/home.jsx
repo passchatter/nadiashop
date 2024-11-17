@@ -5,6 +5,9 @@ import Products from "../components/products.jsx";
 import BestProducts from "../components/bestProducts.jsx";
 import Shipper from "../components/shipper.jsx";
 import About from "../components/about.jsx";
+import Gallery from "../components/gallery.jsx";
+import CallToAction from "../components/callToAction.jsx";
+import Footer from "../components/footer.jsx";
 
 function Home() {
   return (
@@ -15,6 +18,9 @@ function Home() {
       <BestProducts></BestProducts>
       <Shipper></Shipper>
       <About></About>
+      <Gallery></Gallery>
+      <CallToAction></CallToAction>
+      <Footer></Footer>
     </>
   );
 }

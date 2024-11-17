@@ -17,6 +17,9 @@ export default {
           more400: "#93573B",
         },
       },
+      screens: {
+        xs: "375px",
+      },
     },
   },
   plugins: [],
