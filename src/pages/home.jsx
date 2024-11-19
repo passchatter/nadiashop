@@ -16,10 +16,10 @@ function Home() {
       <Hero></Hero>
       <Products></Products>
       <BestProducts></BestProducts>
-      <Shipper></Shipper>
       <About></About>
       <Gallery></Gallery>
       <CallToAction></CallToAction>
+      <Shipper></Shipper>
       <Footer></Footer>
     </>
   );
