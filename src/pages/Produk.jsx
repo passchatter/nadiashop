@@ -1,12 +1,14 @@
 import "../App.css";
 import Navbar from "../components/navbar.jsx";
-import Hero from "../components/hero.jsx";
+import NavbarHero from '../components/NavbarHero.jsx';
+import FilterProduk from "../components/FilterProduk";
 
 function Produk() {
   return (
     <>
-      <Navbar></Navbar>
-      <Hero></Hero>
+      <Navbar/>
+      <NavbarHero/>
+      <FilterProduk/>
     </>
   );
 }
