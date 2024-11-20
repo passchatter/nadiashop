@@ -50,7 +50,7 @@ function Navbar() {
           {['Home', 'Products', 'About', 'Gallery', 'Contact'].map((item, index) => (
             <div key={index} className="relative group">
               <Link
-                to={`/${item.toLowerCase()}`}
+                to={item == 'Home' ? '/' : `/${item.toLowerCase()}`}
                 className={`transition-colors duration-300 ${
                   isScrolled ? "hover:text-nadia-500" : "hover:text-nadia-500"
                 }`}
@@ -87,7 +87,7 @@ function Navbar() {
               {['Home', 'Products', 'About', 'Gallery', 'Contact'].map((item, index) => (
                 <Link
                   key={index}
-                  to={`/${item.toLowerCase()}`}
+                  to={item == 'Home' ? '/' : `/${item.toLowerCase()}`}
                   onClick={() => setIsOpen(false)}
                   className="hover:scale-105 transition-transform"
                 >
