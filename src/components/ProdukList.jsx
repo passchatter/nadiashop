@@ -54,7 +54,7 @@ function ProdukList({
                 </div>
             ) : (
                 products.map((produk) => (
-                <Link key={produk.id} to={`/product/details/${produk.id}`}>
+                <Link key={produk.id} to={`/product/detail/${produk.id}`}>
                     <div className="rounded-lg overflow-hidden transition">
                         <div className="w-full shadow-sm aspect-square p-5 bg-[#FAF7F0]">
                         <img
