@@ -8,9 +8,11 @@ function CallToAction() {
         <p className="text-pretty text-center text-nadia-400 font-numans text-xs md:text-sm lg:text-base md:w-[80%] xl:w-[60%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam laboriosam quas ipsa odit magni, asperiores sequi enim id possimus molestiae
         </p>
-        <button className="bg-nadia-300 font-numans text-nadia-100 text-xs md:text-sm lg:text-base w-max py-2 md:py-3 px-6 lg:px-8 xl:px-11 mt-6 md:mt-8 rounded-full hover:bg-nadia-more400 active:scale-95 transition-all shadow-md">
-          Consultation Now
-        </button>
+        <a target="_blank" href="">
+          <button className="bg-nadia-300 font-numans text-nadia-100 text-xs md:text-sm lg:text-base w-max py-2 md:py-3 px-6 lg:px-8 xl:px-11 mt-6 md:mt-8 rounded-full hover:bg-nadia-more400 active:scale-95 transition-all shadow-md">
+            Consultation Now
+          </button>
+        </a>
       </div>
     </div>
   );

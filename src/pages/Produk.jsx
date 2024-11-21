@@ -1,6 +1,6 @@
 import "../App.css";
 import Navbar from "../components/navbar.jsx";
-import NavbarHero from '../components/NavbarHero.jsx';
+import NavbarHero from "../components/NavbarHero.jsx";
 import FilterProduk from "../components/FilterProduk";
 import ProdukList from "../components/ProdukList";
 import Footer from "../components/footer";
@@ -33,11 +33,10 @@ function Produk() {
     return Array.from({ length: end - start + 1 }, (_, i) => start + i);
   };
 
-
   return (
     <>
-      <Navbar/>
-      <NavbarHero/>
+      <Navbar />
+      <NavbarHero />
       <FilterProduk
         category={category}
         setCategory={setCategory}
@@ -51,61 +50,53 @@ function Produk() {
         setSearch={setSearch}
         setPage={handleResetPage}
       />
-      <ProdukList
-        category={category}
-        material={material}
-        size={size}
-        color={color}
-        search={search}
-        page={page}
-        setTotalPages={setTotalPages}
-      />
-     <div className="pagination mt-4 flex justify-center items-center gap-2">
-  <button
-    onClick={() => {
-      setPage((prev) => {
-        const newPage = Math.max(prev - 1, 1); // Hitung halaman baru
-        window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll ke atas
-        return newPage; // Kembalikan nilai halaman baru
-      });
-    }}
-    disabled={page === 1}
-    className="px-3 py-1 bg-gray-300 text-black rounded disabled:opacity-50"
-  >
-    Previous
-  </button>
-  {getVisiblePages(page, totalPages, 5).map((pageNumber) => (
-    <button
-      key={pageNumber}
-      onClick={() => {
-        setPage(pageNumber);
-        window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll ke atas
-      }}
-      className={`px-3 py-1 rounded ${
-        page === pageNumber ? "bg-blue-500 text-white" : "bg-gray-300 text-black"
-      }`}
-    >
-      {pageNumber}
-    </button>
-  ))}
-  <button
-    onClick={() => {
-      setPage((prev) => {
-        const newPage = Math.min(prev + 1, totalPages); // Hitung halaman baru
-        window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll ke atas
-        return newPage; // Kembalikan nilai halaman baru
-      });
-    }}
-    disabled={page === totalPages}
-    className="px-3 py-1 bg-gray-300 text-black rounded disabled:opacity-50"
-  >
-    Next
-  </button>
-</div>
 
+      <ProdukList category={category} material={material} size={size} color={color} search={search} page={page} setTotalPages={setTotalPages} />
 
-      <Footer/>
-      
+      <div className="pagination mt-4 flex justify-center items-center gap-2">
+        <button
+          onClick={() => {
+            setPage((prev) => {
+              const newPage = Math.max(prev - 1, 1); // Hitung halaman baru
+              window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll ke atas
+              return newPage; // Kembalikan nilai halaman baru
+            });
+          }}
+          disabled={page === 1}
+          className="px-3 py-1 bg-gray-300 text-black rounded disabled:opacity-50"
+        >
+          Previous
+        </button>
+
+        {getVisiblePages(page, totalPages, 5).map((pageNumber) => (
+          <button
+            key={pageNumber}
+            onClick={() => {
+              setPage(pageNumber);
+              window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll ke atas
+            }}
+            className={`px-3 py-1 rounded ${page === pageNumber ? "bg-blue-500 text-white" : "bg-gray-300 text-black"}`}
+          >
+            {pageNumber}
+          </button>
+        ))}
+
+        <button
+          onClick={() => {
+            setPage((prev) => {
+              const newPage = Math.min(prev + 1, totalPages); // Hitung halaman baru
+              window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll ke atas
+              return newPage; // Kembalikan nilai halaman baru
+            });
+          }}
+          disabled={page === totalPages}
+          className="px-3 py-1 bg-gray-300 text-black rounded disabled:opacity-50"
+        >
+          Next
+        </button>
+      </div>
+
+      <Footer />
     </>
   );
 }

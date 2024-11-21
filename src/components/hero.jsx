@@ -7,10 +7,10 @@ function Hero() {
       <div id="home" className="h-screen relative">
         <img src="/hero.jpg" alt="Hero Image" className="absolute left-0 w-full h-full object-cover z-[-2]" />
         {/* Overlay Background */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/70 via-black/70 to-black/70 z-[-1]"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 via-black/60 to-black/60 z-[-1]"></div>
 
         {/* Content */}
-        <div className="flex flex-col justify-center items-center lg:items-start h-full mx-6 md:mx-12 lg:mx-16 xl:mx-28 lg:pt-52 z-10">
+        <div className="flex flex-col justify-center items-center lg:items-start h-full mx-6 md:mx-12 lg:mx-16 xl:mx-28 lg:pt-44 z-10">
           <div className="lg:hidden flex flex-col items-center mb-4">
             <img src="/logoWhite.png" alt="Hero Image" className="w-8 h-8" />
             <h1 className="text-nadia-100 font-alice text-xl ">Nadia Art Shop</h1>
