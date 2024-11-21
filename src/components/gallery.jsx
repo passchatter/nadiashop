@@ -11,14 +11,14 @@ import { Autoplay } from "swiper/modules";
 function Gallery() {
   return (
     <>
-      <div className="py-16 lg:py-24 px-6 md:px-12 lg:px-16 xl:px-28">
+      <div id="gallery" className="py-16 lg:py-24 px-6 md:px-12 lg:px-16 xl:px-28">
         <h1 className="text-center font-alice font-medium text-3xl md:text-4xl xl:text-5xl mb-4 text-nadia-300">Gallery</h1>
         <div className=" w-full mt-7">
           <Swiper
             spaceBetween={5}
             centeredSlides={true}
             autoplay={{
-              delay: 4000,
+              delay: 2000,
               disableOnInteraction: false,
             }}
             breakpoints={{

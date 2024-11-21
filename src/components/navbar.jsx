@@ -1,7 +1,7 @@
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function Navbar() {
@@ -25,41 +25,37 @@ function Navbar() {
 
   return (
     <>
-      {/* Navbar Tetap di Atas */}
-      <nav
-        className={`z-50 fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-11 lg:px-14 xl:px-28 py-4 lg:py-5 ${
-          isScrolled ? "bg-white text-black shadow-lg" : "bg-nadia-000 text-white"
-        } transition-all duration-300`}
-      >
+      <nav className={`z-50 fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-11 lg:px-14 xl:px-28 py-4 lg:py-5 ${isScrolled ? "bg-white text-black shadow-lg" : "bg-nadia-000 text-white"} transition-all duration-300`}>
         <Link to="/">
-          {/* Ganti logo sesuai kondisi scroll */}
-          <img
-            src={isScrolled ? "/logoBlack.png" : "/logoWhite.png"}
-            alt="Logo"
-            className="h-10 md:h-12 transition-all duration-300"
-          />
+          <img src={isScrolled ? "/logoBlack.png" : "/logoWhite.png"} alt="Logo" className="h-10 md:h-12 transition-all duration-300" />
         </Link>
 
-        {/* Icon Hamburger */}
         <button className={`text-2xl md:hidden transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`} onClick={handleToggle}>
           <FontAwesomeIcon icon={faBars} />
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex gap-8 font-raleway md:text-md">
-          {['Home', 'Products', 'About', 'Gallery', 'Contact'].map((item, index) => (
-            <div key={index} className="relative group">
+        <div className="hidden md:flex gap-8 font-raleway font-medium md:text-md">
+          {["Home", "Products", "About", "Gallery", "Contact"].map((item, index) => {
+            if (item === "Products") {
+              // Navigasi ke halaman Products
+              return (
+                <Link key={index} to="/products" className="cursor-pointer hover:text-nadia-500 transition-colors duration-300">
+                  {item}
+                </Link>
+              );
+            }
+            // Navigasi ke bagian tertentu di halaman Home
+            return (
               <Link
-                to={item == 'Home' ? '/' : `/${item.toLowerCase()}`}
-                className={`transition-colors duration-300 ${
-                  isScrolled ? "hover:text-nadia-500" : "hover:text-nadia-500"
-                }`}
+                key={index}
+                to={`/#${item.toLowerCase()}`} // Gunakan hash URL
+                className="cursor-pointer hover:text-nadia-500 transition-colors duration-300"
               >
                 {item}
               </Link>
-              <span className={`absolute bottom-0 left-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${isScrolled ? "bg-black" : "bg-white"}`}></span>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </nav>
 
@@ -67,10 +63,7 @@ function Navbar() {
       {isOpen && (
         <>
           {/* Overlay dengan Animasi Fade-in */}
-          <div
-            className="fixed top-0 left-0 w-full h-full bg-black/50 z-40 animate-fadeIn"
-            onClick={handleToggle}
-          ></div>
+          <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-40 animate-fadeIn" onClick={handleToggle}></div>
 
           {/* Menu Mobile dengan Animasi Slide-in */}
           <div
@@ -82,18 +75,31 @@ function Navbar() {
               </button>
             </div>
 
-
             <div className="flex flex-col mt-8 gap-6 text-lg font-semibold">
-              {['Home', 'Products', 'About', 'Gallery', 'Contact'].map((item, index) => (
-                <Link
-                  key={index}
-                  to={item == 'Home' ? '/' : `/${item.toLowerCase()}`}
-                  onClick={() => setIsOpen(false)}
-                  className="hover:scale-105 transition-transform"
-                >
-                  {item}
-                </Link>
-              ))}
+              {["Home", "Products", "About", "Gallery", "Contact"].map((item, index) => {
+                if (item === "Products") {
+                  // Navigasi ke halaman terpisah
+                  return (
+                    <Link
+                      key={index}
+                      to="/products" // Rute ke halaman Products
+                      className="cursor-pointer hover:text-nadia-500 transition-colors duration-300"
+                    >
+                      {item}
+                    </Link>
+                  );
+                } else {
+                  return (
+                    <Link
+                      key={index}
+                      to={`/#${item.toLowerCase()}`} // Gunakan hash URL
+                      className="cursor-pointer hover:text-nadia-500 transition-colors duration-300"
+                    >
+                      {item}
+                    </Link>
+                  );
+                }
+              })}
             </div>
 
             <div className="mt-10">

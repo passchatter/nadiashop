@@ -1,12 +1,13 @@
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareFacebook, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <>
       <div className="mt-20">
-        <div className="w-full h-48 mb-2">
+        <div className="w-full h-48 lg:h-96 mb-2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7892.285838411072!2d115.26758909225468!3d-8.485481553141945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d5367e05a17%3A0xe3211f4061e3def0!2sNADIA%20art%20Shop!5e0!3m2!1sid!2sid!4v1731834336855!5m2!1sid!2sid&zoom=17"
             loading="lazy"
@@ -14,7 +15,7 @@ function Footer() {
           ></iframe>
         </div>
 
-        <div className="bg-nadia-400 text-nadia-100 w-full pt-9 pb-6 px-6 md:px-12 lg:px-16 xl:px-28 flex flex-col gap-4 lg:flex-row justify-center items-start">
+        <div id="contact" className="bg-nadia-400 text-nadia-100 w-full pt-9 pb-6 px-6 md:px-12 lg:px-16 xl:px-28 flex flex-col gap-4 lg:flex-row justify-center items-start">
           <div className="lg:w-[40%]">
             <div className="flex items-center w-full gap-4">
               <img src="/logoWhite.png" alt="" className="h-9 md:h-11" />
@@ -31,29 +32,33 @@ function Footer() {
           <div className="lg:w-[10%]">
             <h1 className="font-alice font-medium text-lg md:text-xl">Links</h1>
             <div className="flex flex-col text-xs md:text-sm gap-[.15rem] ">
-              <a href="#" className="hover:text-nadia-200 active:scale-95 transition-all">
+              <Link to="/#home" className="hover:text-nadia-200 active:scale-95 transition-all">
                 Home
-              </a>
-              <a href="#" className="hover:text-nadia-200 active:scale-95 transition-all">
+              </Link>
+              <Link to="/#about" className="hover:text-nadia-200 active:scale-95 transition-all">
                 About
-              </a>
-              <a href="#" className="hover:text-nadia-200 active:scale-95 transition-all">
+              </Link>
+              <Link to="/Products" className="hover:text-nadia-200 active:scale-95 transition-all">
                 Products
-              </a>
-              <a href="#" className="hover:text-nadia-200 active:scale-95 transition-all">
+              </Link>
+              <Link to="/#gallery" className="hover:text-nadia-200 active:scale-95 transition-all">
                 Gallery
-              </a>
-              <a href="#" className="hover:text-nadia-200 active:scale-95 transition-all">
+              </Link>
+              <Link href="/#contact" className="hover:text-nadia-200 active:scale-95 transition-all">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="lg:w-[20%]">
             <h1 className="font-alice font-medium text-lg md:text-xl">Get In Touch</h1>
             <div className="flex gap-3 mt-1">
-              <FontAwesomeIcon icon={faSquareFacebook} className="text-3xl hover:text-nadia-200 active:scale-95 transition-all" />
-              <FontAwesomeIcon icon={faSquareInstagram} className="text-3xl hover:text-nadia-200 active:scale-95 transition-all" />
+              <a target="_blank" href="https://www.facebook.com/makcrame/">
+                <FontAwesomeIcon icon={faSquareFacebook} className="text-3xl hover:text-nadia-200 active:scale-95 transition-all" />
+              </a>
+              <a target="_blank" href="https://www.instagram.com/nadia.shop.161?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <FontAwesomeIcon icon={faSquareInstagram} className="text-3xl hover:text-nadia-200 active:scale-95 transition-all" />
+              </a>
             </div>
           </div>
         </div>

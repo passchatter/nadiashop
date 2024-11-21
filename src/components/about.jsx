@@ -3,7 +3,7 @@ import "../App.css";
 function About() {
   return (
     <>
-      <div className="bg-nadia-100 py-16 lg:py-32 px-6 md:px-12 lg:px-16 xl:px-28">
+      <div id="about" className="bg-nadia-100 py-16 lg:py-32 px-6 md:px-12 lg:px-16 xl:px-28">
         <div>
           <div className="flex flex-col md:flex-row md:gap-5 xl:gap-10 justify-center items-center">
             <h1 className="md:hidden text-3xl md:text-4xl xl:text-5xl font-alice font-medium text-nadia-300 text-center mb-5 w-max">About Us</h1>
