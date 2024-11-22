@@ -12,66 +12,60 @@ function BestProducts() {
         </div>
 
         <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-4 lg:w-[80%] font-raleway">
-          <div className="group rounded-lg overflow-hidden transition">
+          <a href="/product/detail/1" className="group rounded-lg overflow-hidden transition">
             <div className="w-full shadow-sm aspect-square p-5 bg-[#FAF7F0]">
               <img src="/1.png" alt="Product" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
             </div>
             <div className="p-4">
-              <h2 className="text-nadia-400 text-[.8rem] md:text-base">Category Name</h2>
-              <h1 className="text-nadia-500 text-base md:text-xl font-medium -mt-1">Product Name</h1>
-              <p className="text-nadia-300 text-lg font-semibold mt-2">$0.00</p>
+              <h2 className="hidden xs:block text-nadia-400 text-[.8rem] md:text-base">Decorative Mirror</h2>
+              <h1 className="text-nadia-500 text-base md:text-xl font-medium md:-mt-1 leading-tight">Mirror With Star Motif</h1>
             </div>
-          </div>
-          <div className="group rounded-lg overflow-hidden transition">
+          </a>
+          <a href="/product/detail/2" className="group rounded-lg overflow-hidden transition">
             <div className="w-full shadow-sm aspect-square p-5 bg-[#FAF7F0]">
               <img src="/2.png" alt="Product" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
             </div>
             <div className="p-4">
-              <h2 className="text-nadia-400 text-[.8rem] md:text-base">Category Name</h2>
-              <h1 className="text-nadia-500 text-base md:text-xl font-medium -mt-1">Product Name</h1>
-              <p className="text-nadia-300 text-lg font-semibold mt-2">$0.00</p>
+              <h2 className=" hidden xs:block text-nadia-400 text-[.8rem] md:text-base">Decorative Mirror</h2>
+              <h1 className="leading-tight text-nadia-500 text-base md:text-xl font-medium md:-mt-1">Mirror With Horse Hooves Motif</h1>
             </div>
-          </div>
-          <div className="group rounded-lg overflow-hidden transition">
+          </a>
+          <a href="/product/detail/71" className="group rounded-lg overflow-hidden transition">
             <div className="w-full shadow-sm aspect-square p-5 bg-[#FAF7F0]">
               <img src="/75.png" alt="Product" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
             </div>
             <div className="p-4">
-              <h2 className="text-nadia-400 text-[.8rem] md:text-base">Category Name</h2>
-              <h1 className="text-nadia-500 text-md md:text-xl font-medium -mt-1">Product Name</h1>
-              <p className="text-nadia-300 text-lg font-semibold mt-2">$0.00</p>
+              <h2 className="hidden xs:block text-nadia-400 text-[.8rem] md:text-base">Juju Khat</h2>
+              <h1 className="leading-tight text-nadia-500 text-md md:text-xl font-medium md:-mt-1">Juju Khat Steering Wheel (Turkish)</h1>
             </div>
-          </div>
-          <div className="group rounded-lg overflow-hidden transition">
+          </a>
+          <a href="/product/detail/82" className="group rounded-lg overflow-hidden transition">
             <div className="w-full shadow-sm aspect-square p-5 bg-[#FAF7F0]">
               <img src="/86.png" alt="Product" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
             </div>
             <div className="p-4">
-              <h2 className="text-nadia-400 text-[.8rem] md:text-base">Category Name</h2>
-              <h1 className="text-nadia-500 text-md md:text-xl font-medium -mt-1">Product Name</h1>
-              <p className="text-nadia-300 text-lg font-semibold mt-2">$0.00</p>
+              <h2 className="hidden xs:block text-nadia-400 text-[.8rem] md:text-base">Juju Khat</h2>
+              <h1 className="leading-tight text-nadia-500 text-md md:text-xl font-medium md:-mt-1">Juju Khat Steering Wheel (White)</h1>
             </div>
-          </div>
-          <div className="group rounded-lg overflow-hidden transition">
+          </a>
+          <a href="/product/detail/133" className="group rounded-lg overflow-hidden transition">
             <div className="w-full shadow-sm aspect-square p-5 bg-[#FAF7F0]">
               <img src="/137.png" alt="Product" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
             </div>
             <div className="p-4">
-              <h2 className="text-nadia-400 text-[.8rem] md:text-base">Category Name</h2>
-              <h1 className="text-nadia-500 text-md md:text-xl font-medium -mt-1">Product Name</h1>
-              <p className="text-nadia-300 text-lg font-semibold mt-2">$0.00</p>
+              <h2 className="hidden xs:block text-nadia-400 text-[.8rem] md:text-base">Decorative Table</h2>
+              <h1 className="lading-tight text-nadia-500 text-md md:text-xl font-medium md:-mt-1">Papua Round Stand</h1>
             </div>
-          </div>
-          <div className="group rounded-lg overflow-hidden transition">
+          </a>
+          <a href="/product/detail/148" className="group rounded-lg overflow-hidden transition">
             <div className="w-full shadow-sm aspect-square p-5 bg-[#FAF7F0]">
               <img src="/152.png" alt="Product" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
             </div>
             <div className="p-4">
-              <h2 className="text-nadia-400 text-[.8rem] md:text-base">Category Name</h2>
-              <h1 className="text-nadia-500 text-md md:text-xl font-medium -mt-1">Product Name</h1>
-              <p className="text-nadia-300 text-lg font-semibold mt-2">$0.00</p>
+              <h2 className="hidden xs:block text-nadia-400 text-[.8rem] md:text-base">Decorative Table</h2>
+              <h1 className="leading-tight text-nadia-500 text-md md:text-xl font-medium md:-mt-1">Necklace Shell Stand</h1>
             </div>
-          </div>
+          </a>
         </div>
 
         <Link

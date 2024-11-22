@@ -5,6 +5,8 @@ import FilterProduk from "../components/FilterProduk";
 import ProdukList from "../components/ProdukList";
 import Footer from "../components/footer";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 function Produk() {
   const [category, setCategory] = useState("");
@@ -53,7 +55,8 @@ function Produk() {
 
       <ProdukList category={category} material={material} size={size} color={color} search={search} page={page} setTotalPages={setTotalPages} />
 
-      <div className="pagination mt-4 flex justify-center items-center gap-2">
+      {/* pagination */}
+      <div className="px-6 md:px-12 lg:px-16 xl:px-28 mt-4 flex items-center justify-center gap-2 lg:text-lg font-raleway">
         <button
           onClick={() => {
             setPage((prev) => {
@@ -63,9 +66,10 @@ function Produk() {
             });
           }}
           disabled={page === 1}
-          className="px-3 py-1 bg-gray-300 text-black rounded disabled:opacity-50"
+          className="px-3 lg:px-4 py-1 bg-nadia-300 text-nadia-100 rounded disabled:opacity-50"
         >
-          Previous
+          <p className="hidden md:block">Previous</p>
+          <FontAwesomeIcon icon={faAngleLeft} className="md:hidden" />
         </button>
 
         {getVisiblePages(page, totalPages, 5).map((pageNumber) => (
@@ -75,7 +79,7 @@ function Produk() {
               setPage(pageNumber);
               window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll ke atas
             }}
-            className={`px-3 py-1 rounded ${page === pageNumber ? "bg-blue-500 text-white" : "bg-gray-300 text-black"}`}
+            className={`px-3 aspect-square rounded ${page === pageNumber ? "bg-nadia-300 text-nadia-100" : "bg-nadia-200 opacity-50 text-nadia-400"}`}
           >
             {pageNumber}
           </button>
@@ -90,9 +94,10 @@ function Produk() {
             });
           }}
           disabled={page === totalPages}
-          className="px-3 py-1 bg-gray-300 text-black rounded disabled:opacity-50"
+          className="px-3 lg:px-4 py-1  bg-nadia-300 text-nadia-100 rounded disabled:opacity-50"
         >
-          Next
+          <p className="hidden md:block">Next</p>
+          <FontAwesomeIcon icon={faAngleRight} className="md:hidden" />
         </button>
       </div>
 

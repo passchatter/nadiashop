@@ -26,7 +26,7 @@ function Footer() {
 
           <div className="mt-3 lg:mt-0 lg:w-[30%]">
             <h1 className="font-alice font-medium text-lg md:text-xl">Address</h1>
-            <p className="text-pretty font-numans font-light  text-xs ">Jl. Raya Gentong, Tegallalang, Ubud</p>
+            <p className="text-pretty font-numans font-light  text-xs ">Jl. Raya Gentong, Tegallalang, Kec. Tegallalang, Kabupaten Gianyar, Bali</p>
           </div>
 
           <div className="lg:w-[10%]">
