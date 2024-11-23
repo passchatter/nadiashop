@@ -6,32 +6,33 @@ function About() {
   const cards = [
     {
       image: "/about1.jpg",
-      title: "100% natural",
-      description: "Clean, pesticide free, responsibly grown and delivered to you",
+      title: "Exported to 10+ countries!",
+      description: "Our products are exported to over 10 countries with trusted quality.",
     },
     {
       image: "/about2.jpg",
-      title: "High quality",
-      description: "Clean, pesticide free, responsibly grown and delivered to you",
+      title: "International quality!",
+      description: "International quality, pesticide-free, and eco-friendly.",
     },
     {
       image: "/about3.jpg",
-      title: "Fresh Items",
-      description: "Clean, pesticide free, responsibly grown and delivered to you",
+      title: "Trusted globally!",
+      description: "Trusted worldwide for our quality and reliability.",
     },
   ];
+  
   return (
     <>
-      <div id="about" className="bg-nadia-100 py-16 lg:py-32 px-6 md:px-12 lg:px-16 xl:px-28">
+      <div id="about" className="bg-nadia-100 py-16 px-6">
       <div className="grid container grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="h-[90%]">
+        <div className="h-full">
           <img src="/about.jpg" alt="About Us" className="w-full h-full object-cover shadow-lg rounded-3xl" />
         </div>
         <div className="flex md:pl-10 flex-col justify-center items-center md:items-start">
           <h1 className="hidden md:block text-center md:text-left font-alice font-medium text-nadia-more400 text-3xl">
             About Us
           </h1>
-          <h2 className="xl:w-[85%] text-nadia-300 text-3xl md:text-5xl py-4 text-center md:text-left leading-relaxed">
+          <h2 className="text-nadia-300 text-3xl md:text-4xl py-4 text-center md:text-left md:leading-[3rem]">
             Quality Handicraft Products, Trusted in 10+ Export Countries
           </h2>
 
@@ -52,7 +53,7 @@ function About() {
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-black/60 to-black/40 z-[-1]"></div>
 
         {/* Content */}
-        <div className="flex flex-col justify-center items-center lg:items-start h-full mx-6 md:mx-12 lg:mx-16 xl:mx-28 lg:pt-44 z-10">
+        <div className="flex flex-col justify-center items-center lg:items-start h-full z-10">
          <div className="container">
          <div className="lg:hidden flex flex-col items-center mb-4">
             <img src="/logoWhite.png" alt="Hero Image" className="w-8 h-8" />
@@ -73,23 +74,24 @@ function About() {
       <div className="py-16 px-8 md:px-16 lg:px-24">
   {/* Section Title */}
   <div className="text-center mb-12">
-    <p className="text-orange-500 uppercase text-sm font-bold tracking-wide">
-      About Us
-    </p>
-    <h1 className="text-2xl md:text-4xl font-bold text-gray-800">
-      Providing Great Foodstuffs
-    </h1>
-    <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-      We have 30 years of agriculture & eco farming experience globally, work with professionals.
-    </p>
-  </div>
+  <p className="text-nadia-more400 uppercase text-sm font-bold tracking-wide">
+    Why Choose Us
+  </p>
+  <h1 className="text-2xl md:text-4xl font-bold text-nadia-300">
+    Over 10 Years of Excellence
+  </h1>
+  <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+    we deliver top-quality products, ensuring sustainability and trust with every partnership.
+  </p>
+</div>
+
 
   {/* Cards */}
   <div className="grid grid-cols-1 container md:grid-cols-3 gap-6 md:gap-12">
   {cards.map((card, index) => (
     <div
       key={index}
-      className="relative h-60 md:h-[600px] overflow-hidden rounded-lg shadow-lg group"
+      className="relative h-60 md:h-[500px] overflow-hidden rounded-lg shadow-lg group"
     >
       {/* Image */}
       <img
@@ -121,18 +123,18 @@ function About() {
 
 </div>
 
-<div className="mt-20 lg:mt-32 px-4 md:px-8 container">
-  <div className="border-t-2 border-b-2 items-center justify-center border-nadia-300 py-10 md:py-16 lg:py-20 xl:py-24 grid grid-cols-2">
+<div className="mt-20 lg:mt-32 py-16 px-6 container">
+  <div className="border-t-2 container lg:gap-14 gap-10 grid grid-cols-1 md:grid-cols-2  border-b-2 items-center justify-center border-nadia-300 py-10 md:py-16 lg:py-20 xl:py-24">
     
     {/* Image on the left (desktop only) */}
-    <div className="">
-      <img src="/jujukhat.jpg" alt="Product Quality" className="xl:w-[80%] xl:h-[80%] object-cover rounded-lg shadow-lg" />
+    <div className="h-full mb-10">
+          <img src="/about.jpg" alt="About Us" className="w-full h-full object-cover shadow-lg rounded-3xl" />
     </div>
 
     {/* Content on the right */}
-    <div className="flex flex-col px-4 lg:px-22">
-      <p className="font-numans text-nadia-400 text-sm md:text-base xl:text-lg ">wholesale</p>
-      <h1 className="text-pretty font-alice text-nadia-300 py-4 text-xl md:text-2xl xl:text-4xl leading-tight">
+    <div className="flex flex-col  lg:px-22">
+      <p className="font-numans text-nadia-400 text-2xl ">wholesale</p>
+      <h1 className="text-nadia-300 text-3xl md:text-4xl py-4 text-left md:leading-[3rem]">
       Large Quantity Orders? We are ready to meet your needs!
       </h1>
       <p className="text-pretty font-numans text-nadia-400 text-xs md:text-sm xl:text-base md:w-[80%] mt-4">
