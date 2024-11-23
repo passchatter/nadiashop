@@ -24,7 +24,8 @@ function Products() {
 
   return (
     <>
-      <div id="products" className="my-20 md:my-28 flex flex-col lg:flex-row justify-center items-center mx-6 md:mx-12 lg:mx-16 xl:mx-28">
+      <div id="products" className="my-20 md:my-28 mx-6 md:mx-12 lg:mx-16 xl:mx-28">
+        <div className="container flex flex-col lg:flex-row justify-center items-center">
         <div className="lg:w-1/2 ">
           <h1 className="text-center lg:text-left font-alice font-medium text-3xl md:text-4xl xl:text-5xl mb-2 text-nadia-300">Products</h1>
           <p className="text-center lg:text-left font-numans text-nadia-400 text-sm lg:text-base md:w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ad impedit aut rem harum dicta.</p>
@@ -53,6 +54,7 @@ function Products() {
           <button onClick={scrollRight} className="hidden lg:block absolute h-full right-0 top-1/2 transform -translate-y-1/2 translate-x-8 transition z-10 text-2xl text-nadia-300 hover:text-nadia-400 active:scale-90   font-bold ">
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
+        </div>
         </div>
       </div>
     </>

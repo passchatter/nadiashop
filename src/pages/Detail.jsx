@@ -9,7 +9,8 @@ function Detail() {
   const { id } = useParams();
   const [produk, setProduk] = useState([]);
   const [relatedProduk, setRelatedProduk] = useState([]);
-  let base_url = "http://localhost/backendnadia/";
+  // let base_url = "http://localhost/backendnadia/";
+  let base_url = "http://localhost:8888/nadiashop/backend/";
 
   useEffect(() => {
     const getDetail = async () => {

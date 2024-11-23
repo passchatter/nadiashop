@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    container:{
+      center:true,
+      padding:"1rem"
+    },
     extend: {
+      screens:{
+        lg:"1124px",
+        xl:"1224px"
+      },
       fontFamily: {
         alice: ["Alice", "serif"],
         raleway: ["Raleway", "sans-serif"],
@@ -17,9 +25,6 @@ export default {
           500: "#323130",
           more400: "#93573B",
         },
-      },
-      screens: {
-        xs: "375px",
       },
       animation: {
         fadeIn: "fadeIn 0.3s ease-in-out",

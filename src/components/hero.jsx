@@ -11,7 +11,8 @@ function Hero() {
 
         {/* Content */}
         <div className="flex flex-col justify-center items-center lg:items-start h-full mx-6 md:mx-12 lg:mx-16 xl:mx-28 lg:pt-44 z-10">
-          <div className="lg:hidden flex flex-col items-center mb-4">
+         <div className="container">
+         <div className="lg:hidden flex flex-col items-center mb-4">
             <img src="/logoWhite.png" alt="Hero Image" className="w-8 h-8" />
             <h1 className="text-nadia-100 font-alice text-xl ">Nadia Art Shop</h1>
           </div>
@@ -30,6 +31,7 @@ function Hero() {
             Shop Now
           </Link>
         </div>
+         </div>
       </div>
     </>
   );

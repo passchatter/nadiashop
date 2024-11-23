@@ -1,10 +1,10 @@
 import "../App.css";
 
-function NavbarHero() {
+function ContactHero() {
   return (
     <>
       <div className="h-[30vh] relative">
-        <img src="/decorativeMirror.jpg" alt="Hero Image" className="absolute left-0 w-full h-full object-cover z-[-2]" />
+        <img src="/wallDecoration.jpg" alt="Hero Image" className="absolute left-0 w-full h-full object-cover z-[-2]" />
         {/* Overlay Background */}
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-black/50 to-black/70 z-[-1]"></div>
 
@@ -19,4 +19,4 @@ function NavbarHero() {
   );
 }
 
-export default NavbarHero;
+export default ContactHero;

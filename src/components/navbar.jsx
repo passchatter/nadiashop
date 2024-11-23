@@ -25,7 +25,8 @@ function Navbar() {
 
   return (
     <>
-      <nav className={`z-50 fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-11 lg:px-14 xl:px-28 py-4 lg:py-5 ${isScrolled ? "bg-white text-black shadow-lg" : "bg-nadia-000 text-white"} transition-all duration-300`}>
+      <nav className={`z-50 fixed top-0 left-0 right-0  py-4 lg:py-5 ${isScrolled ? "bg-white text-black shadow-lg" : "bg-nadia-000 text-white"} transition-all duration-300`}>
+        <div className="container flex justify-between items-center">
         <Link to="/">
           <img src={isScrolled ? "/logoBlack.png" : "/logoWhite.png"} alt="Logo" className="h-10 md:h-12 transition-all duration-300" />
         </Link>
@@ -44,6 +45,12 @@ function Navbar() {
                   {item}
                 </Link>
               );
+            }else if(item == "Contact"){
+              return (
+                <Link key={index} to="/contact" className="cursor-pointer hover:text-nadia-500 transition-colors duration-300">
+                {item}
+              </Link>
+              )
             }
             // Navigasi ke bagian tertentu di halaman Home
             return (
@@ -57,6 +64,7 @@ function Navbar() {
             );
           })}
         </div>
+      </div>
       </nav>
 
       {/* Overlay dan Mobile Navigation */}
@@ -87,8 +95,20 @@ function Navbar() {
                     >
                       {item}
                     </Link>
-                  );
-                } else {
+                );
+                }else if(item == "Contact"){
+                  return (
+                    <Link
+                      key={index}
+                      to="/contact" // Rute ke halaman Products
+                      className="cursor-pointer hover:text-nadia-500 transition-colors duration-300"
+                    >
+                      {item}
+                    </Link>
+                  )
+                }
+                
+                else {
                   return (
                     <Link
                       key={index}
