@@ -1,68 +1,54 @@
-import React from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-
-
+import NavbarHero from "../components/NavbarHero";
 
 const ContactUs = () => {
   return (
     <>
-    <Navbar/>
+      <Navbar />
+      <NavbarHero tulisan="Contact Us" />
 
-      <div className="h-[30vh] relative">
-          <div className="container">
-          <img src="/decorativetable.jpg" alt="Hero Image" className="absolute left-0 w-full h-full object-cover z-[-2]" />
-            {/* Overlay Background */}
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-black/50 to-black/70 z-[-1]"></div>
-
-            {/* Content */}
-            <div className="flex flex-col justify-center items-center lg:items-start h-full pt-32 lg:pt-52 z-10">
-              <h1 className="text-white font-alice font-bold text-4xl md:text-5xl lg:text-6xl mb-6 text-center lg:text-left">Contact Us</h1>
-
-              <p className="text-white text-center lg:text-left lg:w-2/3 xl:w-2/4 font-light text-sm md:text-base lg:text-lg mb-8">Home / Product</p>
-            </div>
-          </div>
-      </div>
       <div className="bg-nadia-100">
-        {/* Header Section */}        
+        {/* Header Section */}
         {/* Form Section */}
         <div className="container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Form */}
           <div className="lg:col-span-2 bg-nadia-100 shadow-lg rounded-lg lg:p-8">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-nadia-more400 mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="font-semibold text-nadia-500">1. Does NadiaShop accept large orders?</h3>
-                <p className="text-nadia-400 mt-2">Yes! We accept bulk orders for business needs or special events. Feel free to reach out to us via email at <span className="text-nadia-more400">nadiashop@gmail.com</span>.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-nadia-500">2. What types of products are available at NadiaShop?</h3>
-                <p className="text-nadia-400 mt-2">
-                  We offer a variety of products including <strong>table decor</strong>, <strong>wall art</strong>, <strong>decorative mirrors</strong>, and <strong>exclusive handcrafted items</strong> that are perfect for complementing your home’s interior.
-                </p>
-
-              </div>
-              <div>
-                <h3 className="font-semibold text-nadia-500">3. Can I customize certain products?</h3>
-                <p className="text-nadia-400 mt-2">Yes, we provide customization options for certain products. Feel free to consult with our team via email to discuss your specific needs.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-nadia-500">4. Does NadiaShop offer decor for events?</h3>
-                <p className="text-nadia-400 mt-2">Yes, our products are perfect for decorating events such as weddings, birthdays, or corporate events. We can also help select products that match your event's theme.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-nadia-500">5. Are all NadiaShop products available for international shipping?</h3>
-                <p className="text-nadia-400 mt-2">Yes, we offer international shipping. However, shipping costs and delivery times may vary depending on your location.</p>
+            <div className="bg-white rounded-lg shadow-lg p-8">
+              <h2 className="text-2xl font-bold text-nadia-more400 mb-6">Frequently Asked Questions</h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="font-semibold text-nadia-500">1. Does NadiaShop accept large orders?</h3>
+                  <p className="text-nadia-400 mt-2">
+                    Yes! We accept bulk orders for business needs or special events. Feel free to reach out to us via email at <span className="text-nadia-more400">nadiashop@gmail.com</span>.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-nadia-500">2. What types of products are available at NadiaShop?</h3>
+                  <p className="text-nadia-400 mt-2">
+                    We offer a variety of products including <strong>table decor</strong>, <strong>wall art</strong>, <strong>decorative mirrors</strong>, and <strong>exclusive handcrafted items</strong> that are perfect for complementing
+                    your home’s interior.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-nadia-500">3. Can I customize certain products?</h3>
+                  <p className="text-nadia-400 mt-2">Yes, we provide customization options for certain products. Feel free to consult with our team via email to discuss your specific needs.</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-nadia-500">4. Does NadiaShop offer decor for events?</h3>
+                  <p className="text-nadia-400 mt-2">Yes, our products are perfect for decorating events such as weddings, birthdays, or corporate events. We can also help select products that match your events theme.</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-nadia-500">5. Are all NadiaShop products available for international shipping?</h3>
+                  <p className="text-nadia-400 mt-2">Yes, we offer international shipping. However, shipping costs and delivery times may vary depending on your location.</p>
+                </div>
               </div>
             </div>
           </div>
 
-          </div>
-
           {/* Newsletter Section */}
           <div className="bg-nadia-300 text-nadia-100 rounded-lg p-8">
-          <div className="bg-nadia-300 text-nadia-100 rounded-lg p-8">
+            <div className="bg-nadia-300 text-nadia-100 rounded-lg p-8">
               {/* Header */}
               <div className="text-center mb-8">
                 <h1 className="text-3xl font-bold text-white">Discover the Best Quality!</h1>
@@ -74,22 +60,16 @@ const ContactUs = () => {
                 {/* Section 1 */}
                 <div className="rounded-lg bg-[#FAF7F0] p-6 shadow-md text-center">
                   <h2 className="text-xl font-semibold text-nadia-500">Unmatched Quality</h2>
-                  <p className="text-nadia-400 text-sm md:text-base">
-                    Every product is crafted with meticulous attention to detail. Visit our store to experience the quality firsthand.
-                  </p>
+                  <p className="text-nadia-400 text-sm md:text-base">Every product is crafted with meticulous attention to detail. Visit our store to experience the quality firsthand.</p>
                 </div>
 
                 {/* Section 2 */}
                 <div className="rounded-lg bg-[#FAF7F0] p-6 shadow-md text-center">
                   <h2 className="text-xl font-semibold text-nadia-500">Visit Our Store</h2>
-                  <p className="text-nadia-400 text-sm md:text-base">
-                    Enjoy a seamless shopping experience at our store. Meet our friendly and professional staff.
-                  </p>
-                 
+                  <p className="text-nadia-400 text-sm md:text-base">Enjoy a seamless shopping experience at our store. Meet our friendly and professional staff.</p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -110,11 +90,9 @@ const ContactUs = () => {
             <p className="text-nadia-more400 text-2xl font-bold">Nadia HQ</p>
             <p className="text-nadia-400 mt-2">Your trusted partner in design.</p>
           </div>
-          
         </div>
-
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

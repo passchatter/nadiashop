@@ -25,21 +25,10 @@ function Navbar() {
 
   return (
     <>
-      <nav className={`z-50 fixed top-0 left-0 right-0  py-4 lg:py-5 ${isScrolled ? "bg-white text-black shadow-lg" : "bg-nadia-000 text-white"} transition-all duration-300`}>
-        <div className="container flex justify-between items-center">
-        <div className="flex items-center flex-row gap-2">
-            <Link to="/">
-              <img 
-                src={isScrolled ? "/logoBlack.png" : "/logoWhite.png"} 
-                alt="Logo" 
-                className="h-10 md:h-12 transition-all duration-300" 
-              />
-            </Link>         
-            <h1 className={`text-2xl mt-3 font-bold mb-3 font-alice ${isScrolled ? 'text-black' : 'text-white'}`}>
-              NadiaShop
-            </h1>
-          </div>
-            
+      <nav className={`w-full z-50 fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-11 lg:px-14 xl:px-28 py-4 lg:py-5 ${isScrolled ? "bg-white text-nadia-400 shadow-lg" : " text-white"} transition-all duration-300`}>
+        <Link to="/">
+          <img src={isScrolled ? "/logoBlack.png" : "/logoWhite.png"} alt="Logo" className="h-10 md:h-12 transition-all duration-300" />
+        </Link>
 
         <button className={`text-2xl md:hidden transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`} onClick={handleToggle}>
           <FontAwesomeIcon icon={faBars} />
@@ -51,30 +40,35 @@ function Navbar() {
             if (item === "Products") {
               // Navigasi ke halaman Products
               return (
-                <Link key={index} to="/products" className="cursor-pointer hover:text-nadia-500 transition-colors duration-300">
-                  {item}
+                <Link key={index} to="/products" className="cursor-pointer group relative w-max">
+                  <span>{item}</span>
+                  <span className={`absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 group-hover:w-3/6  ${isScrolled ? "bg-nadia-400" : "bg-nadia-100"}`}></span>
+                  <span className={`absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 group-hover:w-3/6 ${isScrolled ? "bg-nadia-400" : "bg-nadia-100"}`}></span>
                 </Link>
               );
-            }else if(item == "Contact"){
+            } else if (item == "Contact") {
               return (
-                <Link key={index} to="/contact" className="cursor-pointer hover:text-nadia-500 transition-colors duration-300">
-                {item}
-              </Link>
-              )
+                <Link key={index} to="/contact" className="cursor-pointer group relative w-max">
+                  <span>{item}</span>
+                  <span className={`absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 group-hover:w-3/6  ${isScrolled ? "bg-nadia-400" : "bg-nadia-100"}`}></span>
+                  <span className={`absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 group-hover:w-3/6 ${isScrolled ? "bg-nadia-400" : "bg-nadia-100"}`}></span>
+                </Link>
+              );
             }
             // Navigasi ke bagian tertentu di halaman Home
             return (
               <Link
                 key={index}
                 to={`/#${item.toLowerCase()}`} // Gunakan hash URL
-                className="cursor-pointer hover:text-nadia-500 transition-colors duration-300"
+                className="cursor-pointer group relative w-max"
               >
-                {item}
+                <span>{item}</span>
+                <span className={`absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 group-hover:w-3/6  ${isScrolled ? "bg-nadia-400" : "bg-nadia-100"}`}></span>
+                <span className={`absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 group-hover:w-3/6 ${isScrolled ? "bg-nadia-400" : "bg-nadia-100"}`}></span>
               </Link>
             );
           })}
         </div>
-      </div>
       </nav>
 
       {/* Overlay dan Mobile Navigation */}
@@ -105,8 +99,8 @@ function Navbar() {
                     >
                       {item}
                     </Link>
-                );
-                }else if(item == "Contact"){
+                  );
+                } else if (item == "Contact") {
                   return (
                     <Link
                       key={index}
@@ -115,10 +109,8 @@ function Navbar() {
                     >
                       {item}
                     </Link>
-                  )
-                }
-                
-                else {
+                  );
+                } else {
                   return (
                     <Link
                       key={index}

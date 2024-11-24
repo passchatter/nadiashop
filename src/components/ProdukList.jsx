@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 function ProdukList({ category, material, size, color, search, page, setTotalPages }) {
   const [products, setProducts] = useState([]);
-  // let base_url = "http://localhost/backendnadia/";
-  let base_url = "http://localhost:8888/nadiashop/backend/";
+  let base_url = "http://localhost/backendnadia/";
+  // let base_url = "http://localhost:8888/nadiashop/backend/";
 
   const getProducts = async () => {
     try {
