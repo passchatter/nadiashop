@@ -27,9 +27,19 @@ function Navbar() {
     <>
       <nav className={`z-50 fixed top-0 left-0 right-0  py-4 lg:py-5 ${isScrolled ? "bg-white text-black shadow-lg" : "bg-nadia-000 text-white"} transition-all duration-300`}>
         <div className="container flex justify-between items-center">
-        <Link to="/">
-          <img src={isScrolled ? "/logoBlack.png" : "/logoWhite.png"} alt="Logo" className="h-10 md:h-12 transition-all duration-300" />
-        </Link>
+        <div className="flex items-center flex-row gap-2">
+            <Link to="/">
+              <img 
+                src={isScrolled ? "/logoBlack.png" : "/logoWhite.png"} 
+                alt="Logo" 
+                className="h-10 md:h-12 transition-all duration-300" 
+              />
+            </Link>         
+            <h1 className={`text-2xl mt-3 font-bold mb-3 font-alice ${isScrolled ? 'text-black' : 'text-white'}`}>
+              NadiaShop
+            </h1>
+          </div>
+            
 
         <button className={`text-2xl md:hidden transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`} onClick={handleToggle}>
           <FontAwesomeIcon icon={faBars} />

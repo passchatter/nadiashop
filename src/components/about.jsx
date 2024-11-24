@@ -60,12 +60,13 @@ function About() {
             <h1 className="text-nadia-100 font-alice text-xl ">Nadia Art Shop</h1>
           </div>
           <h1 className="text-nadia-100 font-alice font-semibold text-3xl md:text-5xl lg:text-6xl mb-6 text-center lg:text-left">
-            Elevate Your Space with Authentic Balinese Handicrafts <span className="hidden xs:inline">and Decorative Pieces</span>
+            Transform Your Home with Handcrafted Balinese Artistry <span className="hidden xs:inline">and Unique Decorative Pieces</span>
           </h1>
 
           <p className="hidden lg:block font-raleway text-nadia-100 text-center lg:text-left lg:w-2/3 xl:w-2/4 text-sm md:text-base lg:text-lg mb-8">
-            Explore handcrafted decor like rattan mirrors and elegant table pieces, blending Balinese tradition with modern style for a unique touch in any space.
+            Discover the beauty of handcrafted Balinese art pieces, from intricate wooden carvings to elegant woven decor, each item crafted with love and tradition to add a touch of Bali’s soul to your space.
           </p>
+
 
         </div>
          </div>
