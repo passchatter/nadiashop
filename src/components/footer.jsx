@@ -5,7 +5,7 @@ import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg
 const Footer = () => {
   return (
     <>
-   <div className="w-full h-48 lg:h-96 mb-2">
+   <div className="w-full h-48 lg:h-96 mb-2 mt-10">
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7892.285838411072!2d115.26758909225468!3d-8.485481553141945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d5367e05a17%3A0xe3211f4061e3def0!2sNADIA%20art%20Shop!5e0!3m2!1sid!2sid!4v1731834336855!5m2!1sid!2sid&zoom=17"
     loading="lazy"

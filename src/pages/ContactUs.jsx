@@ -1,174 +1,121 @@
 import React from "react";
+import Footer from "../components/footer";
+import Navbar from "../components/navbar";
+
+
 
 const ContactUs = () => {
   return (
-    <div className="bg-gray-50">
-      {/* Header Section */}
-      <header className="bg-teal-200 text-center py-16">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-800">Contact Us</h1>
-        <p className="mt-4 text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-        </p>
-      </header>
+    <>
+    <Navbar/>
 
-      {/* Form Section */}
-      <div className="container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Left Form */}
-        <div className="lg:col-span-2 bg-white shadow-lg rounded-lg p-8">
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input
-                type="email"
-                placeholder="Email"
-                className="border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-teal-400"
-              />
-              <input
-                type="text"
-                placeholder="Phone"
-                className="border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-teal-400"
-              />
+      <div className="h-[30vh] relative">
+          <div className="container">
+          <img src="/decorativetable.jpg" alt="Hero Image" className="absolute left-0 w-full h-full object-cover z-[-2]" />
+            {/* Overlay Background */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/40 via-black/50 to-black/70 z-[-1]"></div>
+
+            {/* Content */}
+            <div className="flex flex-col justify-center items-center lg:items-start h-full pt-32 lg:pt-52 z-10">
+              <h1 className="text-white font-alice font-bold text-4xl md:text-5xl lg:text-6xl mb-6 text-center lg:text-left">Contact Us</h1>
+
+              <p className="text-white text-center lg:text-left lg:w-2/3 xl:w-2/4 font-light text-sm md:text-base lg:text-lg mb-8">Home / Product</p>
             </div>
-            <input
-              type="text"
-              placeholder="Name"
-              className="border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-teal-400"
-            />
-            <textarea
-              placeholder="Message"
-              className="border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-teal-400"
-              rows="5"
-            ></textarea>
-            <button className="bg-teal-400 text-white font-medium py-2 px-6 rounded-lg shadow-md hover:bg-teal-500 transition">
-              Submit Button
-            </button>
-          </form>
-        </div>
+          </div>
+      </div>
+      <div className="bg-nadia-100">
+        {/* Header Section */}        
+        {/* Form Section */}
+        <div className="container mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Left Form */}
+          <div className="lg:col-span-2 bg-nadia-100 shadow-lg rounded-lg lg:p-8">
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-nadia-more400 mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="font-semibold text-nadia-500">1. Does NadiaShop accept large orders?</h3>
+                <p className="text-nadia-400 mt-2">Yes! We accept bulk orders for business needs or special events. Feel free to reach out to us via email at <span className="text-nadia-more400">nadiashop@gmail.com</span>.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-nadia-500">2. What types of products are available at NadiaShop?</h3>
+                <p className="text-nadia-400 mt-2">
+                  We offer a variety of products including <strong>table decor</strong>, <strong>wall art</strong>, <strong>decorative mirrors</strong>, and <strong>exclusive handcrafted items</strong> that are perfect for complementing your home’s interior.
+                </p>
 
-        {/* Newsletter Section */}
-        <div className="bg-teal-400 text-white rounded-lg p-8">
-          <h2 className="text-xl font-bold mb-4">Our Newsletters</h2>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
-          </p>
-          <div className="mt-6">
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full px-4 py-2 rounded-lg focus:outline-none text-gray-800"
-            />
-            <button className="mt-4 bg-gray-800 text-white font-medium py-2 px-6 rounded-lg w-full hover:bg-gray-700 transition">
-              Submit Button
-            </button>
+              </div>
+              <div>
+                <h3 className="font-semibold text-nadia-500">3. Can I customize certain products?</h3>
+                <p className="text-nadia-400 mt-2">Yes, we provide customization options for certain products. Feel free to consult with our team via email to discuss your specific needs.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-nadia-500">4. Does NadiaShop offer decor for events?</h3>
+                <p className="text-nadia-400 mt-2">Yes, our products are perfect for decorating events such as weddings, birthdays, or corporate events. We can also help select products that match your event's theme.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-nadia-500">5. Are all NadiaShop products available for international shipping?</h3>
+                <p className="text-nadia-400 mt-2">Yes, we offer international shipping. However, shipping costs and delivery times may vary depending on your location.</p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+          {/* Newsletter Section */}
+          <div className="bg-nadia-300 text-nadia-100 rounded-lg p-8">
+          <div className="bg-nadia-300 text-nadia-100 rounded-lg p-8">
+              {/* Header */}
+              <div className="text-center mb-8">
+                <h1 className="text-3xl font-bold text-white">Discover the Best Quality!</h1>
+                <p className="text-nadia-200 text-sm md:text-base mt-3">Premium quality products crafted just for you.</p>
+              </div>
+
+              {/* Content */}
+              <div className="space-y-6">
+                {/* Section 1 */}
+                <div className="rounded-lg bg-[#FAF7F0] p-6 shadow-md text-center">
+                  <h2 className="text-xl font-semibold text-nadia-500">Unmatched Quality</h2>
+                  <p className="text-nadia-400 text-sm md:text-base">
+                    Every product is crafted with meticulous attention to detail. Visit our store to experience the quality firsthand.
+                  </p>
+                </div>
+
+                {/* Section 2 */}
+                <div className="rounded-lg bg-[#FAF7F0] p-6 shadow-md text-center">
+                  <h2 className="text-xl font-semibold text-nadia-500">Visit Our Store</h2>
+                  <p className="text-nadia-400 text-sm md:text-base">
+                    Enjoy a seamless shopping experience at our store. Meet our friendly and professional staff.
+                  </p>
+                 
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
 
-      {/* Contact Info Section */}
-      <div className="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-        <div className="bg-white rounded-lg shadow-lg p-6">
-          <p className="text-teal-400 text-2xl font-bold">(+876) 765 685</p>
-          <p className="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        {/* Contact Info Section */}
+        <div className="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          {/* Contact Info */}
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <p className="text-nadia-more400 text-2xl font-bold">(+62) 812-3894-0106</p>
+            <p className="text-nadia-400 mt-2">For support and inquiries.</p>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <p className="text-nadia-more400 text-2xl font-bold">nadiashop@gmail.com</p>
+            <p className="text-nadia-400 mt-2">Reach us via email.</p>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <p className="text-nadia-more400 text-2xl font-bold">Nadia HQ</p>
+            <p className="text-nadia-400 mt-2">Your trusted partner in design.</p>
+          </div>
+          
         </div>
-        <div className="bg-white rounded-lg shadow-lg p-6">
-          <p className="text-teal-400 text-2xl font-bold">mail@influenca.id</p>
-          <p className="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div className="bg-white rounded-lg shadow-lg p-6">
-          <p className="text-teal-400 text-2xl font-bold">London Eye London</p>
-          <p className="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+
       </div>
-
-      {/* Map Section */}
-      <div className="container mx-auto px-4 py-16">
-        <iframe
-          className="w-full h-96 rounded-lg shadow-lg"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609961236!2d72.74109993955079!3d19.082197839435456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b64fb1c6b6e1%3A0x3be7b64fb1c6b6e1!2sMumbai!5e0!3m2!1sen!2sin!4v1632923566481!5m2!1sen!2sin"
-          allowFullScreen=""
-          loading="lazy"
-          title="Map Location"
-        ></iframe>
-      </div>
-
-      <footer class="bg-teal-800 text-white py-12">
-  <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
-  
-    <div>
-      <h2 class="text-xl font-bold">grapeslab</h2>
-      <p class="text-gray-400 mt-4 text-sm">
-        Interior design is the art and science of enhancing the interior of a building.
-      </p>
-      <div class="flex space-x-4 mt-6">
-        <a href="#" class="text-gray-400 hover:text-white">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="text-gray-400 hover:text-white">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="text-gray-400 hover:text-white">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-
-  
-    <div>
-      <h3 class="font-semibold">About</h3>
-      <ul class="mt-4 space-y-2 text-sm">
-        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
-        <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
-        <li><a href="#" class="text-gray-400 hover:text-white">News</a></li>
-        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
-      </ul>
-    </div>
-
-   
-    <div>
-      <h3 class="font-semibold">Company</h3>
-      <ul class="mt-4 space-y-2 text-sm">
-        <li><a href="#" class="text-gray-400 hover:text-white">Our Team</a></li>
-        <li><a href="#" class="text-gray-400 hover:text-white">Partner With Us</a></li>
-        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
-        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
-      </ul>
-    </div>
-
-   
-    <div>
-      <h3 class="font-semibold">Support</h3>
-      <ul class="mt-4 space-y-2 text-sm">
-        <li><a href="#" class="text-gray-400 hover:text-white">Account</a></li>
-        <li><a href="#" class="text-gray-400 hover:text-white">Support Center</a></li>
-        <li><a href="#" class="text-gray-400 hover:text-white">Feedback</a></li>
-        <li><a href="#" class="text-gray-400 hover:text-white">Accessibility</a></li>
-      </ul>
-    </div>
-
-   
-    <div>
-      <h3 class="font-semibold">Contact Us</h3>
-      <ul class="mt-4 space-y-2 text-sm">
-        <li class="text-gray-400">4140 Parker Rd. Allentown,</li>
-        <li class="text-gray-400">New Mexico 31134</li>
-        <li class="text-gray-400">+1 (480) 555-0103</li>
-        <li class="text-gray-400">hello@grapeslab.com</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="border-t border-gray-700 mt-12 pt-6 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center">
-   <div className="container">
-   <p>Copyright © 2021 hello@grapeslab.com</p>
-    <div class="flex space-x-4 mt-4 md:mt-0">
-      <a href="#" class="hover:text-white">Privacy</a>
-      <span>|</span>
-      <a href="#" class="hover:text-white">Terms & Conditions</a>
-    </div>
-   </div>
-  </div>
-</footer>
-
-    </div>
+      <Footer/>
+    </>
   );
 };
 
