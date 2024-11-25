@@ -7,7 +7,7 @@ function BestProducts() {
       {/* bg-[#FAF7F0] */}
       <div className="bg-[#ffffff] px-6 md:px-12 lg:px-24 py-16 lg:py-20 xl:py-24 flex flex-col items-center">
         <div className="text-center mb-12">
-          <h2 className="text-lg md:text-xl text-nadia-400">All Category</h2>
+          <h2 className="font-raleway text-lg md:text-xl text-nadia-400">All Category</h2>
           <h1 className="text-3xl md:text-4xl xl:text-5xl font-alice font-medium text-nadia-300">best selling product</h1>
         </div>
 

@@ -16,7 +16,7 @@ function Hero() {
               <img src="/logoWhite.png" alt="Hero Image" className="w-8 h-8" />
               <h1 className="text-nadia-100 font-alice text-xl">Nadia Art Shop</h1>
             </div>
-            <h1 className="text-pretty text-nadia-100 font-alice font-medium text-3xl md:text-5xl xl:text-6xl mb-6 text-center lg:text-left">
+            <h1 className="text-pretty text-nadia-100 font-alice font-semibold  text-3xl md:text-5xl xl:text-6xl mb-6 text-center lg:text-left">
               Elevate Your Space with Authentic Balinese Handicrafts <span className="hidden xs:inline">and Decorative Pieces</span>
             </h1>
 

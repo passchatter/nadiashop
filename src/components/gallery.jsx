@@ -28,30 +28,30 @@ function Gallery() {
               },
               768: {
                 slidesPerView: 3,
-                spaceBetween: 30,
+                spaceBetween: 10,
               },
               1024: {
-                slidesPerView: 4,
-                spaceBetween: 40,
+                slidesPerView: 3,
+                spaceBetween: 20,
               },
             }}
             modules={[Autoplay]}
             className="mySwiper"
           >
-            <SwiperSlide className="relative">
-              <img src="/galery1.jpg" alt="Gallery 1" className="w-full h-full object-cover transition-transform transform rounded-lg hover:scale-110" />
+            <SwiperSlide className="relative overflow-hidden rounded-md">
+              <img src="/galery1.jpg" alt="Gallery 1" className="w-full h-full object-cover transition-transform transform rounded-md hover:scale-110" />
             </SwiperSlide>
-            <SwiperSlide className="relative">
-              <img src="/galery2.jpg" alt="Gallery 2" className="w-full h-full object-cover transition-transform transform rounded-lg hover:scale-110" />
+            <SwiperSlide className="relative overflow-hidden rounded-md">
+              <img src="/galery2.jpg" alt="Gallery 2" className="w-full h-full object-cover transition-transform transform rounded-md hover:scale-110" />
             </SwiperSlide>
-            <SwiperSlide className="relative">
-              <img src="/galery3.jpg" alt="Gallery 3" className="w-full h-full object-cover transition-transform transform rounded-lg hover:scale-110" />
+            <SwiperSlide className="relative overflow-hidden rounded-md">
+              <img src="/galery3.jpg" alt="Gallery 3" className="w-full h-full object-cover transition-transform transform rounded-md hover:scale-110" />
             </SwiperSlide>
-            <SwiperSlide className="relative">
-              <img src="/galery4.jpg" alt="Gallery 4" className="w-full h-full object-cover transition-transform transform rounded-lg hover:scale-110" />
+            <SwiperSlide className="relative overflow-hidden rounded-md">
+              <img src="/galery4.jpg" alt="Gallery 4" className="w-full h-full object-cover transition-transform transform rounded-md hover:scale-110" />
             </SwiperSlide>
-            <SwiperSlide className="relative">
-              <img src="/galery5.jpg" alt="Gallery 5" className="w-full h-full object-cover transition-transform transform rounded-lg hover:scale-110" />
+            <SwiperSlide className="relative overflow-hidden rounded-md">
+              <img src="/galery5.jpg" alt="Gallery 5" className="w-full h-full object-cover transition-transform transform rounded-md hover:scale-110" />
             </SwiperSlide>
           </Swiper>
         </div>
