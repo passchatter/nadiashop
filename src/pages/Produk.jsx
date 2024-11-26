@@ -38,7 +38,7 @@ function Produk() {
   return (
     <>
       <Navbar />
-      <NavbarHero />
+      <NavbarHero tulisan="Product List" />
       <FilterProduk
         category={category}
         setCategory={setCategory}

@@ -1,5 +1,4 @@
 import "../App.css";
-import { Link } from "react-router-dom";
 
 function BestProducts() {
   return (
@@ -68,12 +67,12 @@ function BestProducts() {
           </a>
         </div>
 
-        <Link
-          to="/Products"
+        <a
+          href="/Products"
           className="mt-10 md:mt-11 lg:mt-14 px-10 py-2 md:px-12 md:py-3 bg-nadia-300 text-nadia-100 font-numans text-sm lg:text-base rounded-full shadow-md hover:bg-nadia-more400 active:scale-95 transition-all cursor-pointer"
         >
           Find Your Favorites
-        </Link>
+        </a>
       </div>
     </>
   );

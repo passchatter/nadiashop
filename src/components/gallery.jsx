@@ -50,7 +50,7 @@ function Gallery() {
             <SwiperSlide className="relative overflow-hidden rounded-md">
               <img src="/galery4.jpg" alt="Gallery 4" className="w-full h-full object-cover transition-transform transform rounded-md hover:scale-110" />
             </SwiperSlide>
-            <SwiperSlide className="relative overflow-hidden rounded-md">
+            <SwiperSlide className="relative overflow-hidden rounded-md ">
               <img src="/galery5.jpg" alt="Gallery 5" className="w-full h-full object-cover transition-transform transform rounded-md hover:scale-110" />
             </SwiperSlide>
           </Swiper>

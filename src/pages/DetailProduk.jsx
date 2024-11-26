@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import Footer from "../components/footer";
 
 function DetailProduct() {
   const { id } = useParams();
@@ -112,7 +113,7 @@ function DetailProduct() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
               {/* mappingnya disini */}
               {relatedProduk.map((relatedProduct) => (
-                <a key={relatedProduct.id} href={`/product/details/${relatedProduct.id}`} className="group rounded-lg overflow-hidden transition">
+                <a key={relatedProduct.id} href={`/product/detail/${relatedProduct.id}`} className="group rounded-lg overflow-hidden transition">
                   <div className="w-full shadow-sm aspect-square p-5 bg-[#FAF7F0]">
                     <img src={`${base_url}/image/${relatedProduct.image}`} alt={relatedProduct.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
                   </div>
@@ -131,6 +132,8 @@ function DetailProduct() {
           <button className="bg-nadia-300 text-nadia-100 py-2 w-full  rounded-lg shadow-lg">Order Now</button>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

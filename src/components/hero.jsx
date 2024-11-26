@@ -1,7 +1,13 @@
 import "../App.css";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Hero() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div id="home" className="h-screen relative px-6 md:px-11 lg:px-14 xl:px-28">
@@ -11,7 +17,7 @@ function Hero() {
 
         {/* Content */}
         <div className="flex flex-col justify-center  h-full lg:pt-44 z-10">
-          <div className="w-full xl:w-[70%]">
+          <div data-aos="fade-up" className="w-full xl:w-[70%]">
             <div className="lg:hidden flex flex-col items-center mb-4">
               <img src="/logoWhite.png" alt="Hero Image" className="w-8 h-8" />
               <h1 className="text-nadia-100 font-alice text-xl">Nadia Art Shop</h1>

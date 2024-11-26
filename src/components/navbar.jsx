@@ -40,19 +40,19 @@ function Navbar() {
             if (item === "Products") {
               // Navigasi ke halaman Products
               return (
-                <Link key={index} to="/products" className="cursor-pointer group relative w-max">
+                <a key={index} href="/products" className="cursor-pointer group relative w-max">
                   <span>{item}</span>
                   <span className={`absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 group-hover:w-3/6  ${isScrolled ? "bg-nadia-400" : "bg-nadia-100"}`}></span>
                   <span className={`absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 group-hover:w-3/6 ${isScrolled ? "bg-nadia-400" : "bg-nadia-100"}`}></span>
-                </Link>
+                </a>
               );
             } else if (item == "Contact") {
               return (
-                <Link key={index} to="/contact" className="cursor-pointer group relative w-max">
+                <a key={index} href="/contact" className="cursor-pointer group relative w-max">
                   <span>{item}</span>
                   <span className={`absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 group-hover:w-3/6  ${isScrolled ? "bg-nadia-400" : "bg-nadia-100"}`}></span>
                   <span className={`absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 group-hover:w-3/6 ${isScrolled ? "bg-nadia-400" : "bg-nadia-100"}`}></span>
-                </Link>
+                </a>
               );
             }
             // Navigasi ke bagian tertentu di halaman Home

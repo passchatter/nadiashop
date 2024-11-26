@@ -55,7 +55,7 @@ function ProdukList({ category, material, size, color, search, page, setTotalPag
             </div>
           ) : (
             products.map((produk) => (
-              <Link key={produk.id} to={`/product/detail/${produk.id}`}>
+              <a key={produk.id} href={`/product/detail/${produk.id}`}>
                 <div className="group rounded-lg overflow-hidden transition">
                   <div className="w-full shadow-sm aspect-square p-5 bg-[#FAF7F0]">
                     <img src={`${base_url}/image/${produk.image}`} alt={produk.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
@@ -65,7 +65,7 @@ function ProdukList({ category, material, size, color, search, page, setTotalPag
                     <h1 className="text-nadia-500 text-base md:text-xl font-medium md:-mt-1 leading-tight">{produk.name}</h1>
                   </div>
                 </div>
-              </Link>
+              </a>
             ))
           )}
         </div>
