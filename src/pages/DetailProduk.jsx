@@ -11,7 +11,8 @@ function DetailProduct() {
   const { id } = useParams();
   const [produk, setProduk] = useState([]);
   const [relatedProduk, setRelatedProduk] = useState([]);
-  let base_url = "http://localhost/backendnadia/";
+  // let base_url = "http://localhost/backendnadia/";
+  let base_url = "http://localhost:8888/nadiashop/backend/";
 
   useEffect(() => {
     const getDetail = async () => {
@@ -103,9 +104,13 @@ function DetailProduct() {
             <p className="text-pretty text-sm lg:text-base">{produk.deskripsi}</p>
           </div>
 
+          <a
+          href="https://wa.me/6281238940106?text=I%20am%20interested%20in%20your%20products.%20Could%20you%20please%20provide%20more%20details%20about%20pricing%20and%20availability?"
+          target="_blank">
           <div className="md:mb-20">
             <button className="hidden md:block bg-nadia-300 hover:bg-nadia-more400 active:scale-95 transition-all text-nadia-100 py-2 lg:py-3 w-1/4 rounded-lg shadow-lg font-medium">Order Now</button>
           </div>
+        </a>
 
           {/* produk terkait */}
           <div>

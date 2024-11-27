@@ -25,13 +25,11 @@ const Footer = () => {
           We create handicrafts that combine traditional techniques with modern aesthetics. Each product reflects craftsmanship, creativity and passion in every detail.
         </p>
         <div className="flex gap-4 mt-4">
-          <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+          <a href="https://www.facebook.com/makcrame/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
             <FontAwesomeIcon icon={faFacebook} size="lg" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
-            <FontAwesomeIcon icon={faTwitter} size="lg" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+         
+          <a href="https://www.instagram.com/nadia.shop.161/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
             <FontAwesomeIcon icon={faInstagram} size="lg" />
           </a>
         </div>
@@ -43,10 +41,10 @@ const Footer = () => {
         <div>
           <h2 className="text-white font-semibold mb-2">About</h2>
           <ul className="text-sm space-y-1">
-            <li><a href="#" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Why Choose Us</a></li>
-            <li><a href="#" className="hover:underline">Wholesale</a></li>
-            <li><a href="#" className="hover:underline">Products</a></li>
+            <li><a href="/#about" className="hover:underline">About Us</a></li>
+            <li><a href="/#about" className="hover:underline">Why Choose Us</a></li>
+            <li><a href="/#about" className="hover:underline">Wholesale</a></li>
+            <li><a href="/#about" className="hover:underline">Products</a></li>
           </ul>
         </div>
 
