@@ -11,7 +11,7 @@ function DetailProduct() {
   const { id } = useParams();
   const [produk, setProduk] = useState([]);
   const [relatedProduk, setRelatedProduk] = useState([]);
-  let base_url = "http://62.72.58.198";
+  let base_url = "https://api.nadiaartshop.com/";
   //http://62.72.58.198/api/produk.php?request=all&page=2&limit=25
 
 
@@ -30,7 +30,7 @@ function DetailProduct() {
       }
     };
 
-    
+
     // Fungsi untuk mengambil produk terkait
     const getRelatedProducts = async (category, productId) => {
       try {
