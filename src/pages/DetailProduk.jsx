@@ -30,6 +30,7 @@ function DetailProduct() {
       }
     };
 
+    
     // Fungsi untuk mengambil produk terkait
     const getRelatedProducts = async (category, productId) => {
       try {
