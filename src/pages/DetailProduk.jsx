@@ -11,13 +11,14 @@ function DetailProduct() {
   const { id } = useParams();
   const [produk, setProduk] = useState([]);
   const [relatedProduk, setRelatedProduk] = useState([]);
-  // let base_url = "http://localhost/backendnadia/";
-  let base_url = "http://localhost:8888/nadiashop/backend/";
+  let base_url = "http://62.72.58.198";
+  //http://62.72.58.198/api/produk.php?request=all&page=2&limit=25
+
 
   useEffect(() => {
     const getDetail = async () => {
       try {
-        const response = await axios.get(`${base_url}/api/produk/detail/${id}`);
+        const response = await axios.get(`${base_url}/api/produk.php?request=detail&id=${id}`);
         const product = response.data[0];
         setProduk(product);
 
@@ -32,7 +33,7 @@ function DetailProduct() {
     // Fungsi untuk mengambil produk terkait
     const getRelatedProducts = async (category, productId) => {
       try {
-        const response = await axios.get(`${base_url}/api/produk/related/${category}/${productId}`);
+        const response = await axios.get(`${base_url}/api/produk.php?request=related&category=${category}&id=${productId}`);
         setRelatedProduk(response.data);
       } catch (error) {
         console.error("Gagal memuat produk terkait.", error);

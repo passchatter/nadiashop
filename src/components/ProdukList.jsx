@@ -6,11 +6,12 @@ import { Link } from "react-router-dom";
 function ProdukList({ category, material, size, color, search, page, setTotalPages }) {
   const [products, setProducts] = useState([]);
   // let base_url = "http://localhost/backendnadia/";
-  let base_url = "http://localhost:8888/nadiashop/backend/";
+  let base_url = "http://62.72.58.198";
+
 
   const getProducts = async () => {
     try {
-      let url = `${base_url}api/produk/filter?page=${page}&limit=25`;
+      let url = `${base_url}/api/produk.php?request=filter&page=${page}&limit=25`;
 
       // add filter di url
       if (category) url += `&category=${category}`;
